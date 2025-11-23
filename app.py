@@ -105,6 +105,7 @@ def storage():
     except Exception as e:
         flash(f"Error listing files: {e}", "danger")
         folders, files = [], []
+        \
 
     parent_path = "/".join(current_path.split("/")[:-1]) if "/" in current_path else ""
 
